@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miraculous Addon</title>
+    <style>
+    .green{
+    color: #fff;
+    background: #8BC34A;
+    box-shadow: 0px 6px 0px 0px #689F38;
+    border: 2px solid #AED581;
+}
+.green:active{
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+.white{
+    color: #000;
+    background: #EEEEEE;
+    box-shadow: 0px 6px 0px 0px #BDBDBD;
+    border: 2px solid #FAFAFA;
+}
+.white:active{
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+.yt{
+    background-color: #F44336;
+    color: #fff;
+}
+.red{
+    color: #000;
+    background: #F44336;
+    box-shadow: 0px 6px 0px 0px #D32F2F;
+    border: 2px solid #E57373;
+}
+.red:active{
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+.dc{
+    background-color: #673AB7;
+    color: #fff;
+}
+.purple{
+    color: #000;
+    background: #673AB7;
+    box-shadow: 0px 6px 0px 0px #512DA8;
+    border: 2px solid #9575CD;
+}
+.purple:active{
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+        /* Estilo para o contêiner das abas */
+        .tab-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* Estilo para as abas */
+        .tab {
+            display: none;
+            width: 50px;
+            height: 50px;
+        }
+        .tab-label {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        /* Estilo para o conteúdo das abas */
+        .tab-content {
+            display: none;
+            text-align: center;
+        }
+        /* Estilo para os botões */
+        .btn{
+            text-decoration: none;
+            margin-right: 10px;
+            width: 150px;
+            height: 50px;
+        }
+        button{
+            text-decoration: none;
+            margin-right: 10px;
+            width: 150px;
+            height: 50px;
+        }
+        .thumb{
+            height: 320px;
+            widows: 320px;
+            border: 3px solid black;
+        }
+        body{
+            color: #fff;
+            font-family: Arial;
+            background: #9C27B0;
+        }
+        a{
+            font-size: 20px;
+            width: 150px;
+            height: 50px;
+            text-decoration-color: none;
+        }
+        li{
+            
+        }
+        .imgtb{
+            width: 50px;
+            height: 50px;
+        }
+        .dw{
+            color: #fff;
+            background-color: #8BC34A;
+            text-decoration: none;
+        }
+        h1{
+            color: #BBDEFB;
+        }
+        h2{
+            color: #000000;
+        }
+        p{
+            color: #4FC3F7;
+        }
+        pv{
+            color: #4FC3F7;
+        }
+        .food{
+            color: #000000;
+        }
+        .foodimg{
+            width: 50px;
+            height: 50px;
+        }
+.toggle{
+    display: none;
+}
+.toggle + label {
+    width: 80px;
+    height: 44px;
+    background: #607D8B;
+    display: block;
+    position: relative;
+    padding: 2px;
+    transition: 200ms;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px 0px #455A64;
+}
+.toggle + label:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FAFAFA;
+    display: block;
+    right: unset;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+    box-shadow: 0px 2px 0px 0px #BDBDBD;
+}
+.toggle:checked + label{
+    background: #8BC34A;
+    box-shadow: 0px 3px 0px 0px #689F38;
+}
+.toggle:checked + label:before{
+    content: '';
+    left: calc(100% - 44px);
+}
+y{
+    color: orange;
+}
+    </style>
+</head>
+<body id="body">
+    <div class="tab-container">
+        <div class="tab-label white" onclick="openTab('tab1')"><img class="imgtb" src="tb1.png" alt="tb1" /></div>
+        <div class="tab-label white" onclick="openTab('tab2')"><img class="imgtb" src="tb2.png" alt="tb2" /></div>
+        <div class="tab-label white" onclick="openTab('tb3')"><img class="imgtb" src="tb3.png" alt="tb3" /></div>
+        <div class="tab-label white" onclick="openTab('tab4')"><img class="imgtb" src="tb4.png" alt="tb4" /></div>
+    </div>
+<li></li>
+    <div class="tab" id="tab1">
+        <img class="thumb" src="img.png" alt="Logo 1">
+        <h1 id="h1">Miraculous Addon</h1>
+        <p id="h2">Atualização do Coelho</p>
+        <p id="h3">V1.0</p>
+        <button class="btn green"><a class="dw" href="https://www.mediafire.com/file/7i10hh4g4wy717f/Miracler-Addon_%25C2%25A7bEvolu%25C3%25A7%25C3%25A3o_1699116444172.mcaddon/file">Instalar</a></button>
+    </div>
+
+    <div class="tab" id="tab2">
+        <button class="red"><a class="btn yt" href="https://youtube.com/@Miracle-Addon?si=L0muGwkAqYrv_FNs" target="_blank">YouTube</a></button>
+        <li></li>
+<button class="purple"><a class="btn dc" href="https://discord.com/invite/Xy6Ej7Dkrg" target="_blank">Discord</a></button>
+    </div>
+
+<div class="tab" id="tb3">
+    <div>
+        <h1>Fluff</h1>
+    <p class="food">Comida: <y>Cenoura</y><img class="foodimg" src="food.png" /></p>
+    </div>
+</div>
+
+    <div class="tab" id="tab4">
+    <h2>Fundo da Atualização</h2>
+    <input id="toggle" class="toggle" type="checkbox"/>
+    <label for="toggle"></label>
+    </div>
+
+    <script>
+        // Função para alternar entre as abas
+        function openTab(tabName) {
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Exibir a primeira aba por padrão
+        openTab("tab1");
+        const toggle = document.getElementById("toggle");
+const content = document.getElementById("body");
+const name = document.getElementById("h2");
+const version = document.getElementById("h3");
+
+toggle.addEventListener("change", function () {
+  if (toggle.checked) {
+    content.style.backgroundColor = "#64B5F6";
+    name.style.color = "#1976D2";
+    version.style.color = "#1976D2"
+  } else {
+    content.style.backgroundColor = "#9C27B0";
+    name.style.color = "#4FC3F7";
+    version.style.color = "#4FC3F7";
+  }
+});
+
+    </script>
+</body>
+</html>
